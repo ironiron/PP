@@ -7,6 +7,8 @@
 QT       += core gui
 QT       += core
 QT       += sql widgets
+RC_FILE = myapp.rc
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = PP
@@ -18,6 +20,12 @@ SOURCES += main.cpp\
     connectDB.cpp
 
 HEADERS  += mainwindow.h \
-    connectDB.h
+    connectDB.h \
+    version.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES +=
+
+DISTFILES += \
+    myapp.rc

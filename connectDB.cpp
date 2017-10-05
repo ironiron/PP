@@ -11,7 +11,7 @@ connectDB::connectDB()
         exit(1);
     }
 
-    QSqlQuery dada;
+    QSqlQuery dada(db);
     query=dada;
     query.exec("create table DATA ("
                "id int primary key,"
